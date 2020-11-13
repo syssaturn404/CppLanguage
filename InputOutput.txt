@@ -1,0 +1,178 @@
+### Mengenal Fungsi Input dan Output pada C++
+Pada dasarnya program hanya terdiri dari 3 bagian 
+yaitu :
+-input
+-proses
+-output
+
+### Input adalah sesuatu data yang kita masukan ke dalam program.
+Input biasanya diambil dari perangakat inputan seperti keyboard, mouse, kamera, microphone, dll.
+Proses adalah langkah-langkah yang harus dilakukan program untuk menghasilkan output.
+Output adalah informasi yang dihasilkan setelah dilakukan proses. 
+Output biasanya ditampilkan ke layar komputer.
+Pada bahasa pemrograman C++, terdapat beberapa fungsi dasar untuk menampilkan output dan mengambil input.
+
+### Fungsi Output pada C++
+
+C++ memiliki empat fungsi dasar untuk menampilkan output:
+
+    -cout untuk menampilkan teks ke layar;
+    -cerr untuk menampilkan error;
+    -clog untuk menampilkan log;
+    -printf() untuk menampilkan output, fungsi ini dari C;
+
+Kita akan fokus memabahas yang dua saja, yakni cout dan printf().
+Soalnya cerr dan clog, cara pakainya sama seperti cout.
+Bedanya sih pada konteks penggunaanya, yakni untuk error dan log.
+
+### Fungsi cout
+Fungsi cout adalah fungsi standar pada C++ untuk menampilkan output ke layar.
+Contoh :
+cout << "Hello C++ << endl;
+cout << "Hello C++ \n";
+
+Setelah simbol << kita bisa menuliskan teks yang akan ditampilkan ke layar.
+Teks harus diapit dengan tanda petik dan untuk membuat baris baru bisa menggunakan endl atau simbol \n.
+Pembuatan baris baru bersifat opsional, terserah kita mau ditambahkan atau tidak.
+
+Contoh lagi :
+cout << "Namaku adalah";
+cout << "Rajingoding";
+
+Maka outputnya akan satu baris sedang jika menggunakan fungsi endl / \n
+kita akan membuat baris baru
+
+Coba kita buat program pertama save namanya program_pertamaku.cpp :
+
+#include <iostream>
+using namespace std;
+
+int main(){
+	
+	cout << "=======SELAMAT DATANG DI PROGRAM PERTAMA SAYA=======" << endl;
+	cout << "Program ini adalah program untuk \n";
+	cout << "Menampilkan output ke layer komputer \n";
+	cout << "Informasi ini sangat penting \n";
+	cout << "====================================================" << endl;
+	
+	cout << endl;
+	cout << "Program by Ridwan" << endl;
+	
+	return 0;
+}
+
+Hasilnya :
+
+root@rajingoding:/mnt/d/Ngoding_C# ./SyntaxDasarCpp.exe
+=======SELAMAT DATANG DI PROGRAM PERTAMA SAYA=======
+Program ini adalah program untuk
+Menampilkan output ke layer komputer
+Informasi ini sangat penting
+====================================================
+
+### Fungsi printf()
+Fungsi printf() merupakan fungsi yang aslinya dari bahasa C, tapi bisa juga dipakai pada C++.
+Fungsi printf() merupakan fungsi untuk menampilkan output ke layar komputer.
+Fungsi ini terdapat pada library <stdio.h> dan juga <iostream>.
+Berikut ini struktur dasar fungsi printf()
+printf("Format",...)
+di bagian ... adalah value atau nilai atau var untuk ditampilkan sedang format adalah
+text yang ingin di tampilkan ke layer 
+
+### Pada fungsi printf() kita menggunakan simbol %s, %d, dan \n untuk format teks.
+Mari kita bahas arti dari simbol tersebut:
+    -%s adalah simbol untuk menampilkan nilai string;
+    -%d adalah simbol untuk menampilkan nilai angka atau bilangan desimal;
+    -\n adalah simbol untuk membuat baris baru.
+
+Selain tiga simbol tersebut, masih banyak lagi simbol yang lain.
+Simbol	Arti atau Fungsi
+%c	    untuk menampilkan karakter
+%s	    untuk menampilkan teks (string)
+%d, %i	untuk menampilkan bilangan desimal
+%f	    untuk menampilkan bilangan pecahan
+%o	    untuk menampilkan bilangan oktal
+%x	    untuk menampilkan bilangan heksadesimal
+\t	    untuk membuat tabs
+
+### Fungsi Input pada C++
+Sementara untuk mengambil input, C++ memiliki fungsi cin dan bisa juga menggunakan scanf() dari bahasa C.
+
+### Fungsi cin
+Fungsi cin (c input) adalah fungsi untuk mengambil input dari keyboard.
+Berikut ini bentuk dasar fungsi cin:
+Fungsi cin membutuhkan variabel untuk menyimpan data yang diinputkan.
+Variable berfungsi menyimpan data saat program berjalan 
+
+# Coba sekarang kita buat contoh programna :
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	// membuat var 
+	string nama;
+	string tinggal;
+	int date;
+	string sekolah;
+
+	// mengambil input var dan menyimpan value di string nama
+	cout << "Tuliskan Nama Kamu : ";
+	cin >> nama;
+
+	// mengambil input var dan menyimpan value di string tinggal
+	cout << "Dimana Tinggalmu : ";
+	cin >> tinggal;
+
+	// mengambil input var dan menyimpan value di string date
+	cout << "Tanggal Lahir kamu : ";
+	cin >> date;
+
+	// mengambil input var dan menyimpan value di string sekolah 
+	cout << "Dimana Kamu bersekolah : ";
+	cin >> sekolah;
+return 0;
+}
+
+Hasilnya :
+root@rajingoding:/mnt/d/Ngoding_C# ./Fungsi_Cin.exe
+Tuliskan Nama Kamu : Rajingoding
+Dimana Tinggalmu : jakarta
+Tanggal Lahir kamu : 2309
+Dimana Kamu bersekolah : jakarta
+
+### Fungsi scanf()
+Fungsi scanf() sebenarnya dari bahasa C, tapi bisa juga digunakan pada C++.
+Fungsi scanf() adalah fungsi untuk mengambil input dari keyboard. 
+Fungsi ini memiliki format seperti fungsi printf().
+Fungsi scanf di bahasa c
+Format yang diberikan tergantung dari jenis tipe data apa yang ingin kita ambil.
+Misalnya mau mengambil angka, maka kita bisa pakai %d atau %i.
+
+# Contohnya :
+
+Contoh:
+
+#include <stdio.h>
+
+void main(){
+
+    int a, b, c;
+
+    printf("Inputkan nilai a: ");
+    scanf("%i", &a);
+
+    printf("Inputkan nilai b: ");
+    scanf("%i", &b);
+
+    c = a + b;
+
+    printf("Hasil a + b: %i", c);
+
+}
+
+## Simbol & berfungsi untuk mengambil alamat memori dari sebuah variabel.
+Fungsi scanf() membutuhkan tempat untuk menyimpan nilai yang akan diinputkan.
+Karena itu kita memberikan simbol & di depan nama variabel untuk menentukan alamat memori yang akan digunakan oleh scanf().
+Kita bisa menggunakan fungsi bawaan C++ atauapun fungsi dari bahasa C seperti printf(), scanf(), puts() dll.
