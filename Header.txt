@@ -1,0 +1,20 @@
+## Header File C++
+File Header adalah file yang berisi deklarasi untuk berbagai fungsi yang
+dibutuhkan oleh program baik itu sebagai standar Input/Output maupun
+sebagai syntax. File Header dalam C++ digunakan untuk memanggil library
+library yang ada sehingga suatu fungsi dapat digunakan secara baik dan benar.
+Beberapa contoh file header di dalam C++ sebagi berikut 
+=============|=============|=========|========|
+File header  |  Input      | Output  | Fungsi |
+=============|=============|=========|========|
+-iostream    |cin          |cout     |clscr() |
+-stdio.h     |Getchar      |printf   |system()|
+-windows.h   |getch        |puts     |sqrt()  |
+-math.h      |scanf        |putchar  |pow()   |
+-string.h    |gets         |         |sqrt()  |
+             |getche       |         |log10() |
+             |             |         |sin()   |
+             |             |         |strcpy()|
+             |             |         |strlen()|
+             |             |         |strcat()|
+===============================================
