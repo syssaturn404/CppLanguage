@@ -1,0 +1,183 @@
+/===================\
+|  PEMROGRAMAN C++  |
+\===================/
+
+### Apa itu C++
+C++ adalah bahasa pemrograman yang dibuat oleh Bjarne Stroustrup
+Seperti namanya, Simbol “++” pada huruf C berarti increment dari C.
+Sebenarnya C++ sama seperti bahasa C, tapi memiliki fitur yang lebih banyak dibandingkan C.
+Karena itulah dinamakan C++ (dibaca si plus plus).
+Lalu apa bedanya dengan C#?
+Bahasa C# dibuat oleh Microsoft dan berjalan di atas mesin virtual .Net. Sedangkan C++ berjalan secara native seperti C.
+Dari segi sintaks, C++ dengan C# cukup berbeda. Menurut saya, C++ lebih mirip C dan C# lebih mirip Java.
+Ia mendapatkan masalah saat menganalisis kernel Unix yang berhubungan dengan komputasi terdistirbusi.
+Sejak saat itu, ia mengingat kembali pengalaman waktu mengerjakan tesis.
+Akhirnya ia membuat bahasa baru dengan mengembangkan bahasa C dan memiliki fitur seperti Simula.
+Selain Simula, bahasa C juga terinspirasi dari bahasa ALGOL 86, Ada, CLU, dan ML.
+Pada Tahun 1982, bahasa baru ciptaan Bjarne ini diberi nama C++ dan juga ditambahkan beberapa fitur seperti class, virtual function, operator overloading, references, constants, dll.
+Pada tahun 1985, Buku The C++ Programming Language diterbitkan dan menjadi satu-satunya referensi bahasa C++ saat itu.
+
+### Versi Bahasa C++
+Versi bahasa C++ akan mengikuti standarisasi yang digunakan. Contoh, untuk C++98 artinya versi bahasa C++ yang menggunakan standarisasi tahun 98.
+Standarisasi bahasa C++ dilakukan oleh ISO (International Organization for Standardization).
+Mengapa sih harus ada standarisasi?
+Ini agar bahasa C++ tidak diimplementasikan seenaknya. Soalnya banyak yang membuat compiler bahasa C++.
+Tujuan dari standarisasi ini agar semua compiler tersebut sama.
+Bayangkan aja.. ada compiler C++ buatan IBM lalu ada juga buatan komunitas GNU.
+Kalau implementasi mereka berbeda, kita bisa repot nantinya.
+Harus belajar bahasa C++ versinya IBM dan versinya GNU.
+Karena itulah, standarisasi diperlukan.
+Saat ini C++ sudah memiliki beberapa standar
+
+Tahun	Nama Standar C++	Nama Sebutan
+1998	ISO/IEC 14882:1998[23]	C++98
+2003	ISO/IEC 14882:2003[24]	C++03
+2011	ISO/IEC 14882:2011[25]	C++11, C++0x
+2014	ISO/IEC 14882:2014[26]	C++14, C++1y
+2017	ISO/IEC 14882:2017[9]	C++17, C++1z
+2020	Sedang dibuat	        C++20,[17] C++
+
+### Sejarah C++
+Pada tahun 1979, seorang ilmuan komputer asal Denmark bernama Bjarne Stroustrup mulai membuat bahasa pemrograman C++.
+Motivasi awalnya sih, karena pengalaman beliau saat tesis dulu.
+Waktu itu, saat mengerjakan tesis..
+Beliau memiliki temuan.. kalau fitur bahasa Simula sangat membantu untuk membuat aplikasi dalam sekala besar.
+Tapi bahasa Simula sangat lambat.
+Cerita berikutnya dimulai saat ia bekerja di AT&T Bell Labs.
+Setiap ada fitur baru, maka pada versi tersebut akan dibuat standarisasinya.
+Terus, kita akan pakai versi yang mana?
+Jika kita baru belajar, sebenarnya kita tidak perlu pusing memikirkan ini.
+Karena di setiap versi, basic-nya akan sama saja.
+Yang berbeda adalah fitur-fiturnya. Ada fungsi yang ditambahkan dan ada juga yang dihapus.
+Untuk dasar seperti variabel, if, loop, fungsi dan lain-lain.. di semua versi akan sama.
+
+### Persiapan untuk belajar C++ di Linux
+Pada dasarnya kita hanya membutuhkan dua alat saja, yaitu: teks editor dan compiler.
+Teks editor adalah program yang digunakan untuk menulis kode program C++
+dan compiler adalah program yang digunakan untuk menerjemahkan bahasa C ke dalam bahasa mesin sehingga dapat dimengerti oleh komputer.
+Pemrograman C++ dilakukan juga menggunakan IDE (Integreted Development Environment).
+IDE adalah teks editor khusus yang di dalamnya sudah ada compiler.
+
+### Teks Editor
+Ada banyak sekali pilihan teks editor yang bisa kita gunakan untuk menulis program C.
+Ada Notepad, Notepad++, Gedit, Geany, Mousepad, Kate, Atom, VS Code, Sublime Text, dsb.
+Pilihlah teks editor yang kamu sukai dan bisa gunakan.
+Text Editor Atom untuk Menulis Program C
+
+### Compiler
+Compiler adalah program yang berfungsi untuk menerjemahkan bahasa C menjadi bahasa mesin, shingga dapat dimengerti oleh komputer.
+Ada beberapa compiler yang bisa digunakan untuk compile program C++.
+Ada GCC (Gnu Compiler Collection), Clang, Visual C++ 2017, Embarcadero, Oracle Solaris Studio C++ Compiler, dan IBM XL C/C++ Compiler.
+Pada tutorial ini, kita akan menggunakan compiler GCC.
+Silahkan instal GCC di Ubuntu dengan perintah berikut:
+sudo apt install gcc
+# atau bisa juga dengan perintah
+sudo apt install g++
+Untuk pengguna Windows, bisa pakai MinGW, Cygwin, atau WSL (ubuntu).
+Setelah itu, coba ketik perintah g++ --version untuk memeriksa versi yang terinstal.
+![Versi G++ yang terinstall]](/img/cpp/hello-world/versi-cpp.png)
+Sekarang semua alat sudah kita persiapkan. Berikutnya, kita bisa mulai membuat program.
+>>Membuat Program C++ Pertama
+Sekarang kita akan coba membuat program Hello World.
+Silahkan buka teks editor kemudian ketik kode berikut:
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    cout << "Hello World!" << endl;
+    return 0;
+}
+
+Hasilnya:
+root@rajingoding:/mnt/d/Ngoding_C# ./h1_cpp.exe
+Hello World
+
+Gimana ngebukanya ?
+Carana gampang, kamuu masuk ke directory tempat kamu menyimpan data itu misal saya menyimpan di 
+/mnt/d/Ngoding_C ya saya masuk dulu ke dirnya
+untuk pengguna win bisa pakai dev C++ dan exenya d cmd tapi lebih mudah di linux
+download saja di microsoft store terminal ubuntu dan install wsl ubuntunya di vscodemu atau compile manual
+dir untuk melihat dir jika kamu menggunakan cmd
+ls untuk melihat dir jika kamu menggunakan linux
+cd untuk masuk ke directory kamu
+cd /mnt/d/Ngoding_C
+ketikan ls jika kamu ingin manual kamu bisa mendownload terminal ubuntu jika kamu pengguna win
+kamu bisa menggunakan wsl ubuntu, cara compilenya bagaimana ? Gampang 
+ketikan g++ namafile -o file 
+Cara exenya ketikan ls, lihat nama filenya lalu lakukan exe dengan awalan ./NamaProgram
+
+### Keterangan:
+    g++ adalah perintah untuk mengkompilasi program C++;
+    hello-world.cpp adalah file yang berisi kode program C++ (source code);
+    -o adalah argumen untuk menyatakan output;
+    hello-world adalah nama file hasil kompilasi.
+    
+### Fungsi Utama
+Setiap program yang ditulis dengan menggunakan bahasa C harus
+mempunyai fungsi utama, fungsi tersebut bernama main(). Fungsi inilah yang
+akan dipanggil pertama kali pada saat eksekusi program. Apabila ada fungsi
+lain yang dibuat, maka fungsi tersebut akan dijankan ketika dipanggil di fungsi
+utama. Hal ini karena bahasa C/C++ merupakan bahasa procedural yang
+menerapkan konsep runtutan (program dieksekusi baris-perbaris dari atas ke
+bawah secara berurutan).
+
+### Identifier / Pengenal
+Identifier adalah suatu nama yang biasa dipakai dalam pemrograman
+untuk menyatakan variabel, konstanta, tipe data, dan fungsi. Aturan untuk
+penulisan identifier antara lain:
+1. Tidak boleh dimulai dengan karakter non huruf
+2. Tidak boleh ada spasi
+3. Tidak boleh menggunakan karakter-karakter ~ ! @ # $ % ^ & * ( ) + ` - = { }
+[ ] : " ; ' < > ? , . / |
+Tidak boleh menggunakan reserved words yang ada dalam C/C++.
+
+### Reserved Word atau Keyword merupakan kata-kata yang telah ada/
+didefinisikan oleh bahasa pemrograman yang bersangkutan. Kata-kata
+tersebut telah memiliki definisi yang sudah tetap dan tidak dapat diubah.
+Karena telah memiliki definisi tertentu, maka kata-kata ini tidak dapat
+digunakan sebagai identifier.
+
+### Tipe Data
+Tipe Data adalah jenis nilai yang dapat ditampung oleh suatu variabel. 
+
+### Deklarasi Variabel
+Variabel merupakan suatu tempat untuk menampung data atau konstanta
+di memori yang mempunyai nilai atau data yang dapat berubah – ubah selama
+proses program. Seperti halnya Pascal, variabel yang digunakan dalam 
+program harus dideklarasikan terlebih dahulu. Pengertian deklarasi di sini yaitu
+mengenalkan variabel ke program dan menentukan tipe datanya. Berikut ini
+
+Contoh pendeklarasian variabel:
+int jumlah;
+float harga_satuan, variabel1;
+char saya, kamu;
+
+### Assigment
+Proses assignment adalah proses pemberian nilai kepada suatu
+variabel yang telah dideklarasikan. 
+
+Berikut adalah contoh assignment:
+Jumlah = 10;
+Harga_satuan = 23.456;
+Saya = ‘B’;
+Kamu = ‘2’;
+
+### Konstanta
+Konstanta adalah identifier yang terkait nilai tidak bisa biasanya diubah
+oleh program selama pelaksanaannya. Untuk pendeklarasian konstanta dalam
+C++ mirip dengan Pascal.
+
+Contoh :
+const tipe_data nama_konstanta = value;
+const int mhs = 20;
+
+### Komentar 
+Komentar digunakan untuk memberi kejelasan pada program 
+dan komentar tidak akan di eksekusi oleh program
+seperti yang kita udah bahas di bahasa C
+
+>Contoh komentarnya sama
+// komentar satu baris 
+/*ini 
+komentar dua baris*/
