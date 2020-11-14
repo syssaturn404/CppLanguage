@@ -1,0 +1,477 @@
+### Apa itu Operator?
+Operator adalah sebuah simbol…
+Simbol yang digunakan untuk melakukan operasi tertentu.
+Misalnya:
+Kita ingin menjumlahkan nilai dari variabel x dan y, maka kita bisa menggunakan operator penjumlahan (+).
+
+x + y
+
+## Ada enam jenis kelompok operator dalam pemrograman C++ yang harus kamu ketahui:
+
+    -Operator Artimatika;
+    -Operator Penugasan;
+    -Operator Pembanding;
+    -Operator Logika;
+    -Operator Bitwise;
+    -dan Operator Lain-lain (Misc Operator)
+
+### Operator Aritmatika
+Operator aritmatika merupakan operator yang digunakan untuk melakukan operasi aritmatika.
+
+## Operator ini terdiri dari:
+Nama Operator	Simbol
+Penjumlahan	+
+Pengurangan	-
+Perkalian	*
+Pembagian	/
+Sisa Bagi	%
+
+Gimana cara pakainya?
+Contoh pada program C++ :
+#include <iostream>
+using namespace std;
+
+int main(){
+
+	float a, b;
+
+	cout << "____WELCOME TO KALKULATOR CERDAS____" << endl;
+	// mengambil input value a
+	cout << "Inputkan Nilai Pertama : ";
+	cin >> a;	
+	
+	// mengambil input value b
+	cout << "Inputkan Nilai Kedua : ";
+	cin >> b;
+
+	// hasil
+	cout << "====================" << endl;
+	cout << "Hasil Pertambahan :" << a + b << endl;
+	cout << "Hasil Pengurangan :" << a - b << endl;
+	cout << "Hasil Pembagian :  " << a / b << endl;
+	cout << "Hasil Perkalian  : " << a * b << endl; 
+	cout << "====================" << endl;
+
+return 0;
+}
+
+Coba jelaskan fungsi program diatas !
+Oke baik saya jelaskan, kita membuat fungsi float sebagai type datanya dan 
+membuat var a, b; kalo kita menggunakan type data int ?
+hasilnya tidak akan sama seharusnya 7 / 2 = 3.5 ini 3 maka dari itu kita menggunakan float
+untuk hasil yang sempurna
+kita menggunakan fungsi cin untuk mengambil input value dari a 
+dan kita juga mengambil value input dari var b kita menyimpan data itu di var b
+lalu hasil akan d outputkan dibawah dengan operator aritmatika << a + b << endl; 
+itu adalah bagian operator 
+so ez kan ? tinggal pinter2 ngembangin aja 
+
+### Operator Penugasan
+Operator penugasan (Assignment Operator) merupakan operator untuk meberikan tugas pada variabel. 
+Biasanya untuk mengisi nilai.
+
+## Operator Penugasan terdiri dari:
+Nama Operator	             Simbol
+Pengisian Nilai	                =
+Pengisian dan Penambahan	+=
+Pengisian dan Pengurangan	-=
+Pengisian dan Perkalian	        *=
+Pengisian dan Pembagian	        /=
+Pengisian dan Sisa bagi	        %=
+Pengisian dan shift left	<<=
+Pengisian dan shift right	>>=
+Pengisian dan bitwise AND	&=
+Pengisian dan bitwise OR	|=
+Pengisian dan bitwise XOR	^=
+
+Contoh program assignment operator / operator penugasan :
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	
+		int a, b, c;
+		
+		// pengisian value dengan operator = 
+		a = 50;
+		b = 20;
+	
+	    // pengisian sekaligus penambahan 
+	    // menampilkan keterangan value var
+	    b += a;
+	    cout << "Isi var a adalah : "<< a << endl;
+	    cout << "Isi var b adalah : "<< c << endl;
+	    cout << "Hasil B += A Adalah : " << b << endl;
+	    b -= a; // pengisian sekaligus pengurangan
+	    // output
+	    cout << "Hasil B -= A Adalah : " << b << endl;
+	    b *= a; // pengisian sekaligus perkalian
+	    // output
+	    cout << "Hasil B *= A Adalah : " << b << endl;
+	    b /= a; // pengisian sekaligus pembagian
+	    // output
+	    cout << "Hasil B /= A Adalah : " << b << endl;
+	    b %= a; // pengisian sekaligus hasil bagi
+	    // output
+	    cout << "Hasil B %= A Adalah : " << b << endl;
+	    
+	    return 0;
+}
+
+Coba jelaskan apa itu ? so jadi pertama kita membuat dengan assignment = atau pengisian nilai di 
+variable a dan b, disitu jelas saya tulis 50 dan 20 
+sekarang kita lakukan pengisian sekaligus penambahannya 
+nah di kondisi b += a; adalah kondisi dimana dilakukannya pertambahan dengan operator 
+assignment dan kita memanggil var a dengan fungsi cout << a <<--- adalah var yang kita panggil 
+begitu juga di bawahnya, sebenernya hampir sama dengan operator aritmatika
+hanya saja berbeda di awalnya ia menggunakan = untuk membuat kondisi dan pengisian dan 
+shift left	<<=
+Pengisian dan shift right	>>=
+Pengisian dan bitwise AND	&=
+Pengisian dan bitwise OR	|=
+Pengisian dan bitwise XOR	^=
+di aritmatika tidak ada, intinya yang perlu diingat "operator assignment atau penugasan 
+adalah untuk pengisian nilai" kalian bisa asah sendiri, lanjut
+
+### Operator Pembanding
+Operator pembanding adalah operator untuk memabndingkan dua buah nilai. 
+Operator ini juga dikenal dengan operator relasi.
+
+## Operator pembanding terdiri dari:
+Nama Operator	      Simbol
+Lebih Besar	        >
+Lebih Kecil	        <
+Sama Dengan	        ==
+Tidak Sama dengan	!=
+Lebih Besar Sama dengan	>=
+Lebih Kecil Sama dengan	<=
+
+Nilai yang dihasilkan dari operasi pembanding akan berupa true dan false.
+Pada bahasa C++, nilai true akan samadengan 1 dan false akan samadengan 0.
+Operator perbandingan biasanya akan kita pakai saat membuat percabangan.
+
+### Operator Logika
+Kalau kamu pernah belajar logika matematika, pasti tidak akan asing dengan operator ini.
+Nama Operator	Simbol di Java
+Logika AND	&&
+Logika OR	||
+Negasi/kebalikan	!
+
+Operator Logika digunakan untuk membuat operasi logika.
+
+Misalnya seperti ini:
+
+    Pernyataan 1: rajingoding seorang programmer
+    Pernyattan 2: rajingoding menggunakan Linux
+
+Jika ditanya, apakah Petani Kode programmer yang menggunakan Linux?
+Tentu kita akan cek dulu kebenarannya
+
+    Pernyataan 1: rajingoding seorang programmer = true.
+    Pernyattan 2: rajingoding menggunakan Linux = true.
+
+Apa rajingoding programmer dan menggunakan Linux?
+
+Bingung?
+
+Coba cek lagi tabel kebenaran untuk logika AND.
+Pernyatan 1	     Pernytaan 2	Logika AND
+true	            true	       true
+true	            false	       false
+false		          true	       false
+false		          false	       false
+
+Masih bingung…?
+Sepertinya kamu harus buka lagi pelajarann logika matematika .
+Lalu bagaimana pengunaanya di program?
+Mari kita lihat contohnya…
+
+Buatlah program baru bernama operator_logika.cpp, kemudian ini dengan kode berikut.
+#include <iostream>
+using namespace std;
+
+int main(){
+    int a = 1; // true
+    int b = 0; // false
+    bool hasil;
+
+    cout << "a = " << a << endl;
+    cout << "b = " << b << endl;
+
+    // logika AND
+    hasil = a && b;
+    cout << "a && b = " << hasil << endl;
+
+    // logika OR
+    hasil = a || b;
+    cout << "a || b = " << hasil << endl;
+
+    // logika NOT
+    cout << "!a = " << !a << endl;
+
+    return 0;
+}
+
+### Operator Bitwise
+Operator bitwise merupkan operator yang digunakan untuk operasi berdasarkan bit (biner) dari sebuah nilai.
+
+## Operator bitwise terdiri dari:
+Nama Operator	Simbol di Java
+AND	&
+OR	|
+XOR	^
+NOT/komplemen	~
+Left Shift	<<
+Right Shift	>>
+
+Buat kamu yang sudah pernah belajar sistem bilangan dan sistem digital akan mudah memahami cara kerja operator ini.
+Tapi buat kamu yang belum…
+Saya akan coba menjelaskan dengan cara yang mudah.
+Baiklah!
+Misalkan kita punya nilai 6 dan 3.
+Nilai 6 dan 3 kemudian kita ubah ke dalam bentuk bilangan biner.
+Sehiga akan menjadi seperti ini:
+
+6 = 0110
+3 = 0011
+----------&
+Nah, operator bitwise akan melakukan operasi berdasarkan biner-biner tersebut.
+
+Coba kita lihat contoh yang pertama:
+
+### Bitwise AND (&)
+Bitwise AND merupakan operasi bit berdasarkan logika AND
+
+>Contoh :
+6 = 0110
+3 = 0011
+---------&
+    0010 = 2
+
+Contoh program bitwise and :
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	
+	int a = 6;
+	int b = 3;
+	int hasil;
+	
+	// menggunakan bitwise and
+	hasil = a & b;
+	cout <<"Hasil dari a & b adalah : " << hasil << endl;
+	return 0;
+}
+
+Apbila kita melakukan operasi AND di sana, maka akan menghasilkan bilangan biner baru.
+Kemudian biner yang dihasilkan tersebut diubah kembali ke dalam bilangan desimal.
+Maka hasilnya adalah 2.
+Mari kita coba dalam program.
+
+### Bitwise OR (|)
+Operator bitwise OR juga sama seperti bitwise AND.
+Operator bitwise OR akan menghasilkan nilai false atau 0 saat keduanya false.
+
+Contoh Program: bitwise_or.cpp:
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	
+	int a = 6;
+	int b = 4;
+	int hasil;
+	
+	// menggunakan bitwise or 
+	hasil = a | b;
+	cout <<"Hasil dari a | b adalah : " << hasil << endl;
+	return 0;
+}
+
+### Bitwise XOR (^)
+Operator XOR (Exclusive OR) akan menghasilkan nilai 1 saat kedua nilai tidak sama.
+
+Contoh program bitwise xor 
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a = 6;
+	int b = 3;	
+	int hasil;
+
+	// menggunakan bitwise xor ^
+	hasil = a ^ b;
+	cout <<"Hasil dari 6 ^ 3 adalah : " << hasil << endl;
+	return 0;
+}
+
+### Bitwise NOT (~)
+Bitwise NOT dikenal juga dengan komplemen.
+Operator ini akan menghasilkan nilai biner yang terbalik dari biner aslinya.
+Kemudian direpresentasikan dengan komplemen dua
+
+Contoh program bitwise not ~ :
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a = 6;
+	int b = 3;
+	int hasil;
+
+	// menggunakan bitwise not
+	hasil = a ~ b;
+	cout <<"Hasil dari a ~ b adalah : " << hasil << endl;
+	return 0;
+}
+
+### Bitwise Left Shift (<<)
+Operator bitwise left shift akan menghasilkan nilai biner yang digeser ke kiri.
+
+Contoh:
+
+6 << 1
+Maka niai biner dari 6 akan digeser sebanyak 1 bit ke arah kiri.
+
+Contoh program :
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a = 6;
+	int hasil;
+
+	// menggunakan bitwise left shift
+	hasil = a << 2;
+	cout <<"Hasil dari a << 2 adalah : " << hasil << endl;
+	return 0;
+}
+
+### Bitwise Right Shift (>>)
+Bitwise right shift sama seperti left shift. Perbedaanya terletak pada arahnya.
+Right shift akan menggeser bit ke arah kanan.
+
+Contoh:
+
+6 >> 1
+
+>Contoh program :
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a = 6;
+	int hasil;
+
+	// menggunakan bitwise right shift
+	hasil = a >> 2;
+	cout <<"Hasil dari a >> 2 adalah : " << hasil << endl;
+	return 0;
+}
+
+### Operator Lain (Misc Operator)
+Selain dari operator yang kita bahas di atas, terdapat beberapa operator lain yang harus diketahui:
+
+## Nama Operator	Simbol	Keterangan
+Alamat memori	&	untuk mengambil alamat memori
+Pointer	        *	untuk membuat pointer
+Ternary	        ? :	untuk membuat kondisi
+Increment	++	untuk menambah 1
+Decrement	--	untuk mengurangi 1
+
+Operator & jika digunakan pada satu variabel, akan berfungsi untuk mengambil alamat memori dari variabel tersebut.
+
+Contohnya :
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int b = 10;
+	int *ptr_b = &b;
+	
+	// melihat alamat memory b 
+	cout << "Alamat memory b adalah : " << &b << endl;
+
+	// mengubah nilai pointer niali b awal 
+	cout << "Alamat awal value a adalah : " << b << endl;
+	*ptr_b = 100;
+	// setelah dirubah 
+	cout << "Setelah alamat b dirubah adalah : " << b << endl;
+	return 0;
+}
+
+Berikutnya ada operator ternary untuk membuat kondisi. 
+Cara kerjanya seperti percabangan if/else.
+
+Contoh program dengan operator ternary :
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a = 5;
+	
+	// menggunakan operator ternary 
+	string hasil = a > 1 ? "benar":"salah";
+
+	// hasil
+	cout << "Hasil dari a > 1 adalah : " << hasil << endl;
+	return 0;
+}
+
+Terakhir ada operator increment dan decrement untuk menambah dan mengurangi nilai dengan 1.
+
+### Contoh program menggunakan increment dan decrement :
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int a = 4;
+
+	// info 
+	cout << "Nilai sebelum increment decrement adalah : " << a << endl;
+	
+	// increment a
+	a++;
+	cout << "Setelah menggunakan increment adalah : " << a << endl;
+	
+	// increment lagi 
+	++a;
+	cout << "Setelah menggunakan increment lagi adalah : " << a << endl;
+
+	// decrement 
+	a--;
+	cout << "Nilai setelah decrement adalah : " << a << endl;
+
+	// decrement lagi
+	--a;
+	cout << "Nilai setelah di decrement lagi adalah : " << a << endl;
+	cout << "Dan seterusnya, Terimakasih"<< endl;
+	return 0;
+}
+
+Hasil :
+
+Nilai sebelum increment decrement adalah : 4
+Setelah menggunakan increment adalah : 5
+Setelah menggunakan increment lagi adalah : 6
+Nilai setelah decrement adalah : 5
+Nilai setelah di decrement lagi adalah : 4
+Dan seterusnya, Terimakasih
+
+Operator increment dan decrement dapat ditaruh di depan maupun di belakang variabel atau nilai.
+Operator ini biasanya digunakan pada blok perulangan.
