@@ -9,7 +9,7 @@
 <p align="center">
 <a href ="#"><img title="License" src ="https://img.shields.io/aur/license/c"></a>
 <a href="#"><img title="Stars" src="https://img.shields.io/github/stars/syssaturn404/CLanguage?color=red"></a>
-<a href="#"><img title="Watchers" src="https://img.shields.io/github/watchers/syssaturn404/CLanguage"></a>
+<a href="#"><img title="Watchers" src="https://img.shields.io/github/watchers/syssaturn404/CppLanguage?style=flat"></a>
 <a href="#"><img title="Followers" src="https://img.shields.io/github/followers/syssaturn404?color=red&label=Followers"></a></center>
 </p>
 
