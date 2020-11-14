@@ -1,0 +1,30 @@
+### Syntax Dasar C++ 
+Pada dasarnya setiap bahasa pemrograman itu sama.
+Sama-sama punya variabel, loop, fungsi, statement, dan lain-lain.
+Namun yang membedakan adalah syntax dan simbol yang digunakan.
+Syntax merupakan aturan-aturan, prinsip, dan proses yang mengatur struktur dari bahasa pemrograman.
+1 Bahasa pemrograman C++ adalah bahasa yang lahir dari pengembangan bahasa C.
+Syntax bahasa pemrograman C++ sama seperti bahasa C.
+Buat kamu yang sudah belajar bahasa pemrograman C, saya yakin kamu akan mudah memahami bahasa C++.
+Baik, apa saja sih syntax dasar yang harus dipahami dari bahasa C++?
+
+### Struktur Dasar Program C++
+Bentuk atau struktur dasar program yang dibaut dengan C++ terdiri dari tiga bagian:
+    -Bagian include
+    -Bagian namespace
+    -Bagian fungsi
+
+Contoh program :
+#include <iostream>
+using namespace std;
+	int main()
+{
+	cout << "Hello WORLD" << endl;
+return 0;
+}
+
+Keterangan : B
+Bagian include adalah bagian deklarasi include
+sedang using namespace std; adalah bagian deklarasi namespace 
+dan yang terakhir adalah bagian deklarasi fungsi 
+
