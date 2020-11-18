@@ -33,6 +33,7 @@ And don't forget to beautify the code that you make yourself ^ - ^
 - [x] [Basic Syntax](https://github.com/syssaturn404/CppLanguage/blob/master/Basic_Syntax.txt)
 - [x] [Format Spiciefer](https://github.com/syssaturn404/CppLanguage/blob/master/Basic_Syntax.txt)
 - [x] [Definition Operator](https://github.com/syssaturn404/CppLanguage/blob/master/Operators/Definition_Operator.txt)
+- [x] [Input Output In CLI](https://github.com/syssaturn404/CppLanguage/blob/master/InputOutput.txt)
 - [ ] [UNRELEASED !](https://f4.bcbits.com/img/a1173595372_16.jpg)
 * [Variable & Type Data](https://github.com/syssaturn404/CppLanguage/blob/master/Variable_TypeData.cpp)
 * [Programs With Basic Syntax](https://github.com/syssaturn404/CppLanguage/blob/master/Basic_Syntax.cpp)
