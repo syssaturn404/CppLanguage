@@ -1,0 +1,172 @@
+# Input adalah masukan yang diterima oleh komputer, input berupa keyboard, mouse, dll
+Perintah Keluaran (Output) adalah aktivitas memberikan informasi dari program untuk pengguna. 
+Informasi tersebut bisa berbentuk data seperti tulisan, gambar, file, hardcopy, objek dan lain-lain.
+
+#Mengenal input dan output pada program C++
+
+#Function printf()
+printf (Print Formatted data to stdout ) adalah fungsi yang berasal dari bahasa pemrograman C,
+fungsi yang paling umum digunakan pada bahasa pemrograman C dalam melakukan perintah keluaran pada CLI. 
+printf() merupakan fungsi yang berasal dari pustaka / library stdio.h.
+Kita dapat menaruh kalimat atau nilai di dalam parameter sebagai argument untuk function printf,
+ketika kita ingin menampilkan nilai dari variabel dengan menggunakan function printf anda bisa menggunakan penentu format.
+penentu format digunakan untuk mencetak variable yang di panggil identitas variable juga disebutkan dalam ruang parameter.
+parameter ke dua yang merupakan daftar urutan identitas variabel, peletakan variabel urut berdasarkan urutan format pada parameter satu.
+
+Tipe Data     	          Penentu Format
+Integer 	                    %d atau %i
+
+Floating Point : 	
+Bentuk Desimal                %f
+– Bentuk Berpangkat 	        %e
+– Bentuk Desimal dan Pangkat 	%g
+Double 	                      %if
+Character 	                  %c
+String 	                      %s
+Unsigned Integer 	            %u
+Long Integer 	                %ld
+Long Unsigned Integer 	      %lu
+Unsigned Hexadecimal Integer 	%x
+Unsigned Octal Integer 	      %o
+
+# Contoh Penulisan :
+
+printf("%s mendapatkan nilai %f", nama, nilai);
+printf("%s mendapatkan peringkat %c", nama, grade);
+
+# Contoh Program :
+
+#include <stdio.h>
+
+int main()
+{
+ char nama[] = "BelajarCPP", grade = 'A';
+    float nilai = 98;
+ 
+    printf("%s mendapatkan nilai %f \n", nama, nilai);
+    printf("%s mendapatkan peringkat %c", nama, grade);
+ 
+    return 0;
+ }
+ 
+ # Function Puts()
+ 
+ puts() adalah fungsi yang mempunyai kepajangan Put String merupakan standar output sama seperti printf(). 
+ function puts() berfungsi untuk menyalin alamat dari string sebagai argumen untuk dicetak ke layar dalam bentuk kalimat. 
+ Puts() Termasuk dalam pustaka stdio.h. yang merupakan turunan dari bahasa pemrograman C.
+ 
+ Perbedaan dari kedua fungsi diatas adalh :
+puts() : Tidak perlu menentukan tipe data string karena ini khusus untuk data string,untuk mencetak pindah bais tidak perlu notasi / format spiciefer \n,
+karena sudah diberikan secara otomatis saat pernyataan puts() selesai.
+printf() : Harus menenukan format data untuk tipe data sting, yaitu %s, Untuk mencetak pindah baris memerlukan notasi \n
+
+# Contoh program :
+
+#include <stdio.h>
+
+int main()
+{
+    char Nama[]="Rajingoding";
+    
+    puts("Saya Sedang Belajar Di : ");
+    puts(Nama);
+    return 0;
+ }
+ 
+ # Function Putchar()
+ function putchar() digunakan untuk menampilkan sebuah karakter ke layar.
+ Penampilan karakter tidak diakhiri dengan pindah baris. 
+ Putchar berasal dari pustaka / library stdio.h.
+ 
+ # Contoh Program :
+ #include <stdio.h>
+ 
+int main()
+{
+    char var='a';
+ 
+    putchar('R');
+    putchar(var);
+    putchar('j');
+    putchar('I');
+    putchar('n');
+    putchar('g');
+    putchar('O');
+    putchar('D');
+    putchar('i');
+    putchar('N');
+    putchar('g');
+    
+    return 0;
+}
+ 
+## Dasar Perintah Masukan (Input) C
+
+Input adalah aktifitas pengguna kepada program, 
+yang memungkinkan program untuk menerima data dari pengguna yang biasanya berbentuk text, file, gambar, hardcopy, obyek dan lain-lain. 
+Data tersebut biasanya akan diolah oleh program dan dikeluarkan dengan perintah keluaran yang ditujukan untuk pengguna itu sendiri.
+Tapi disini kita menggunakan perintah masukan dasar yaitu cin.
+ada beberapa standar function yang dapat kita gunakan untuk melakukan aktifitas input informasi dari manusia ke program dalam bahasa pemrograman C, 
+yaitu dengan menggunakan scanf(), gets(), dan getchar() yang merupakan standar function yang biasa digunakan dalam aktifitas input pada CLI.
+
+# Contoh Dasar Perintah Masukan (Input) C
+scanf (Scan/Read Formatted data from stdin) adalah function yang berasal dari bahasa pemrograman C.
+bisa dikatakan scanf memiliki peran yang berlawanan dengan printf, yaitu scanf berfungsi untuk melakukan perintah masukan melalui layar CLI. 
+Memungkinkan pengguna (manusia) memberikan informasi berupa data text kepada program. 
+Scanf() merupakan fungsi yang berasal dari pustaka / library stdio.h
+
+Contohnya dalam C++ :
+cout << "Masukan Input : " << alamat var << endl;
+cin >> var;
+Contohnya dalam C :
+puts("Masukan Input : ");
+scanf("%penentu format", alamat_memory); // atau variable
+
+Contoh programnya C++ :
+
+#include <stdio.h>
+ 
+int main( )
+{
+   char nama[15] = "";
+ 
+   int kelas = 0;
+   float nilai = 0;
+ 
+   printf("Nama : ");scanf ("%s",nama);
+   printf("Kelas: ");scanf("%d",&kelas);
+   printf("Nilai: ");scanf("%f",&nilai);
+ 
+   printf("\nNama  : %s \nKelas : %d \nNilai : %f", nama, kelas, nilai);
+   return 0;
+}
+
+## Function getchar()
+
+getchar (Get Character from stdin), adalah fungsi yang berasala dari bahasa pemrograman C. 
+merupakan pasangan dari Putchar, dan memiliki peran yang berlawanan yaitu, 
+getchar berfungsi untuk memberikan perintah masukan, 
+memungkinkan pengguna untuk memasukan data informasi berupa satu karakter text melalui CLI kepada program komputer. 
+getchar dikhususkan untuk masukan berupa satu karakter. getchar termasuk dalam pustaka / library stdio.h.
+
+Bentuk Penulisan
+1
+	
+variabel = getchar();
+
+berbeda seperti fungsi-fungsi sebelumnya, getchar tidak menggunakan argument untuk parameter getchar,
+tempat dimana data akan disimpan ditulis sebelum fungsi getchar dan menggunakan tanda = diantara nama tujuan dan function getchar().
+
+Contoh Program :
+#include <stdio.h>
+int main()
+{
+   char var;
+ 
+   printf("Masukan Sebuah Karakter = ");
+   var = getchar();
+ 
+   printf("\nAnda Memasukan karakter \"%c\"", var);
+   return 0;
+}
+
