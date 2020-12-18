@@ -1,0 +1,63 @@
+>> Pengertian Identifier
+
+Identifier atau dalam bahasa Indonesia merupakan Identitas. 
+Identifier adalah identitas atau nama yang telah diberikan kepada function, variabel, obyek, class, namespace dan lain-lain.
+Identifier merupakan suatu identitas untuk sebuah deklarasi yang kita dirikan agar CPU, programmer maupun manusia dapat mudah mengenali deklarasi dalam kode program. 
+
+> Berikut adalah hal yang harus anda perhatikan dalam pembuatan nama atau identitas:
+> Hal dan Peraturan Pembuatan Identifier:
+
+> Identifier dapat terdiri dari satu atau beberapa karakter yang terdiri dari angka (0-9), huruf (A-Z, a-z), Simbol Dollar ($), garis bawah (_). 
+Tapi ingat dalam pembuatan identifier tidak boleh menggunakan angka pada awal dari dari identitas, contoh: 5menit.
+
+> Case Sensitive: yang harus anda perhatikan di sini adalah membedakan Huruf besar dan huruf kecil. 
+Dalam pemrograman jika kita membuat nama identifier dengan memiliki nama yang sama akan dianggap berbeda jika bentuk hurufnya berbeda. 
+
+> contoh : namaidentifier tidak sama dengan Namaidentifier, karna pemrograman ini bersifat Case Sensitive.
+Simbol lain yang tidak disebutkan di peraturan no 1, tidak akan dalam pembubisa digunatan identifier. Seperti (-),(,),(.),(+),(\) dan lain-lain.
+dalam pembuatan identifier tidak diperbolehkan menggunakan spasi.
+Tidak bisa menggunakan nama yang sama dengan beberapa standar keyword pada C++, contoh: int, float, char, private, class, struct dan lain-lain.
+Panjang Identifier tidak dibatasi.
+
+> Di bawah ini adalah macam-macam identifier yang tidak bisa dipakai karena sudah menjadi keyword dalam standar pustaka bahasa pemrograman C++.
+//===============================================================\\
+|- alignas     - dynamic_cast    - nullptr             - typedef  |
+|- alignof     - else            - operator            - typeid   |
+|- and         - delete          - or                  - typename |
+|- and_eq      - do              - or_eq               - union    |
+|- and_eq      - double          - private             - unsigned |
+|- asm         - enum            - protected           - using    |
+|- auto        - explicit        - public              - virtual  |
+|- bitand      - export          - register            - void     |
+|- bitor       - extern          - reinterpret_cast    - volatile |
+|- bool        - false           - return              - wchar_t  |
+|- break       - float           - short               - while    |
+|- case        - for             - signed              - xor      |
+|- catch       - friend          - sizeof              - xor_e    |
+|- char        - goto            - static              - etc..    |
+|- char16_t    - if              - static_assert                  |
+|- char32_t    - inline          - static_cast                    |
+|- class       - int             - struct                         |
+|- compl       - long            - switch                         |
+|- const       - mutable         - template                       |
+|- constexpr   - namespace       - this                           |
+|- const_cast  - new             - thread_local                   |
+|- continue    - noexcept        - throw                          |
+|- decltype    - not             - true                           |
+|- default     - not_eq          - try                            |
+\\===============================================================//
+
+> Example of an incorrect identifier : 
+
+3Nama_2Identifier
+Nfloat
+nama 2identifier
+%^7543
+
+> Examples of correct identifiers :
+
+Nama_Identifier
+NaMaIdentifier
+NmA_IdentFier
+Nama1identifier
+$nAma_Identifier
