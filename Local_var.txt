@@ -1,0 +1,65 @@
+>> Local Variable
+
+Local Variable adalah variabel yang biasanya didirikan di dalam suatu scope (seperti: function). 
+Variabel tersebut hanya akan terlihat dan hanya dapat digunakan di dalam scope itu saja.
+Local Variable adalah Automatic duration yang mempunyai arti bahwa variabel tersebut akan dibuat disaat kompilator 
+melawati deklarasi yang ada di dalam suatu scope dan dihancurkan setelah keluar dari scope tersebut.
+
+> Examples Program :
+
+#include <iostream>
+using namespace std;
+ 
+int main ()
+{
+    int loc = 1; // [ Local Variable ] Variabel didirikan dan terlihat setelah pernyataan ini.
+    cout<< loc <<endl;
+ 
+    return 0;
+} // variabel "loc" dihancurkan dan berakhir di sini.
+
+Dalam scope kita juga dimungkinkan untuk melakukan nested scope (Scope di dalam scope). 
+Hal ini akan berlaku sama, mereka hidup selama eksekusi masih ada di dalam scope tersebut. 
+variabel lokal pada anak scope hanya akan hidup pada anak scope, untuk variabel lokal pada induk scope akan hidup sepanjang scope dimana dia di dirikan,
+dengan arti variabel lokal dalam induk scope dapat di akses di dalam anak scope.
+
+> Examples Program :
+
+#include <iostream>
+using namespace std;
+ 
+int main ()
+{
+    int loc = 1; // [Local Variable] Variabel didirikan dan terlihat setelah pernyataan ini.
+    {
+        int scope = 2; // [Local Variable] Variabel didirikan dan terlihat setelah pernyataan ini
+        cout << loc << endl;
+        cout << umur << endl;
+    } // Variabel "scope" dihancurkan dan berakhir di sini
+    return 0;
+} //variabel "loc" dihancurkan dan berakhir di sini.
+
+Di dalam peraturan pemberian identitas, deklarasi tidak boleh memiliki identitas yang sama dalam satu ruang lingkup. 
+Dengan arti kita dapat mendirikan nama yang sama pada ruang lingkup yang berbeda, itu juga berlaku pada anak ruang lingkup, 
+kita dapat mendirikan deklarasi dengan identitas yang sama meskipun identitas tersebut sudah digunakan 
+di dalam induk ruang lingkup yang merupakan lokal variabel dari induk ruang lingkup.
+Jika kita mendirikan deklarasi memiliki identitas yang sama dengan deklarasi induk ruang lingkup. 
+Identitas dari deklarasi di dalam anak ruang lingkup akan menggantikan deklarasi dari induk ruang lingkup, hal ini disebut sebagai Shadowing atau Name Hiding.
+
+> Examples Program : 
+
+#include <iostream>
+using namespace std;
+ 
+int main ()
+{
+    int id = 1; // [id1 - Local Variable] Variabel didirikan dan terlihat setelah pernyataan ini.
+    {
+        int id = 2; // [ id2 - Local Variable] Variabel didirikan dan terlihat setelah pernyataan ini
+        cout << id <<endl;
+ 
+    }// Variabel "id2" dihancurkan dan berakhir di sini
+    cout << id << endl;
+    return 0;
+} // Variabel "id1" dihancurkan dan berakhir di sini. 
+
