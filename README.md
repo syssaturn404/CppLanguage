@@ -34,8 +34,10 @@ And don't forget to beautify the code that you make yourself ^ - ^
 - [x] [Format Spiciefer](https://github.com/syssaturn404/CppLanguage/blob/master/Basic_Syntax.txt)
 - [x] [Definition Operator](https://github.com/syssaturn404/CppLanguage/blob/master/Operators/Definition_Operator.txt)
 - [x] [Input Output In CLI](https://github.com/syssaturn404/CppLanguage/blob/master/InputOutput.txt)
-- [ ] [UNRELEASED !](https://f4.bcbits.com/img/a1173595372_16.jpg)
+- [x] [Identifier](https://github.com/syssaturn404/CppLanguage/blob/master/Identifier.txt)
+- [x] [Literals And Constants](https://github.com/syssaturn404/CppLanguage/blob/master/Const.txt)
 * [Variable & Type Data](https://github.com/syssaturn404/CppLanguage/blob/master/Variable_TypeData.cpp)
+* [Local Variable](https://github.com/syssaturn404/CppLanguage/blob/master/Local_var.txt)
 * [Programs With Basic Syntax](https://github.com/syssaturn404/CppLanguage/blob/master/Basic_Syntax.cpp)
 * [UNRELEASED !](https://f4.bcbits.com/img/a1173595372_16.jpg)
 
