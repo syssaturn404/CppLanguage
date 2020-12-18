@@ -1,0 +1,94 @@
+>> Definition Constant & Literal
+
+> Konstanta adalah tetapan dari suatu nilai yang bersifat tetap. 
+Nilai akan ditetapkan saat sebelum kompilasi program
+data tersebut tidak akan bisa diubah sepanjang kode sumber program dan di saat program tersebut sedang berjalan (runtime).
+
+> Pengertian Literal
+Literal adalah jenis yang paling jelas dari konstanta, Mereka digunakan untuk mengekspresikan nilai-nilai tertentu dalam kode sumber dari sebuah program.
+
+x = 2 ;
+Nilai 2 merupakan sebuah literal constant.
+
+Dan dibawah ini merupakan macam-macam Literal Constant.
+
+> Integer Literal
+Integer Literal adalah bilangan konstanta yang mengidentifikasi nilai-nilai integer. 
+Dalam penulisan Integer Literal tidak membutuhkan dua buah tanda petik seperti apa yang dilakukan pada char atau string.
+Untuk melakukan Integer Literal dilakukan dengan hanya menulis angka dari nilai yang dimaksud, contoh: 123. 
+Angka tersebut akan dibaca sebagai decimal base, yang ditulis tanpa menggunakan spesial karakter.
+Selain bilangan Desimal, C ++ juga memungkinkan untuk penggunaan bilangan Oktal (Basis 8) yang penulisanya di awali dengan angka 0 ,
+Hexadecimal (Basis 16) yang penulisanya diawali dengan 0x, dan Biner(C++14) (Basis 2) yang penulisanya diawali dengan 0b.
+
+Prefix    System Bil
+            Decimal
+0           Oktal
+0x          Hexa
+0b          Binnary
+
+75       //Decimal
+0113        //Octal
+0x4d        //Hexadecimal
+0b110101    //Biner
+
+> Examples Program
+
+int main ()
+{
+    int x = 75;     //Decimal
+    x = 0113;       //Octal
+    x = 0x4d;       //Hexadecimal
+    x = 0b110101;   //Biner
+ 
+    return 0;
+}
+
+Integer Literal juga dapat memiliki akhiran (Suffix) yang menyatakan type modifikasi. 
+Tapi untuk pemberian konstanta biasanya pada beberapa kompilator hal ini dapat dimengerti otomatis oleh kompilator tanpa menggunakan akhiran tersebut. 
+Di bawah ini adalah beberapa akhiran yang dapat digunakan dalam Integer Literal :
+
+Prefix                                        Keterangan
+
+u atau U	                                    Unsigned Int
+l atau L	                                    Long Int
+ul atau (Ul, uL, UL, lu, Lu, lU, LU)        	Unsigned Long Int
+ll atau (Ll, lL, LL)	                        Long Long Int
+Ull atau (uLL, Ull, ULL, llu, llU, LLu, LLU)	Unsigned Long Long Int
+
+65      //int
+65u     //unsigned
+65l     //long
+65ul    //unsigned long
+65ll    //long long
+65ull   //unsigned long long
+65U     //unsigned
+65LU    //unsigned long
+65LLU   //unsigned long long
+
+> Examples Program
+
+#include <iostream>
+int main ()
+{
+    int x = 65; //Int
+    x = 65u;    //Unsigned
+    x = 65l;    //Long
+    x = 65ul;   //Unsigned Long
+    x = 65ll;   //Long Long
+    x = 65ull;  //Unsigned Long
+    x = 65llu;  //Unsigned Long Long
+    return 0;
+}
+
+>> Floating-point literal
+Floating-point literal adalah suatu literal yang memiliki bagian integer, decimal, pecahan, dan eksponen. 
+Anda dapat mewakili floating point literal dalam bentuk decimal atau bentuk eksponensial.
+
+Examples Writing : 
+
+314159E-5L  // Legal
+3.14159     // 3.14159
+6.02e23     // 6.02 x 10^23
+1.6e-19     // 1.6 x 10^-19
+3.0     // 3.0 
+Floating-point literal menyatakan tipe data float atau long double bisa diwakili menggunakan akhiran sebagai berikut.
