@@ -1,0 +1,74 @@
+>> Global Variable
+Dalam mendirikan variabel kita dimungkinkan untuk mendirikan variabel di luar dari ruang lingkup function. 
+Global variable atau Variabel Global adalah variabel yang didirikan di dalam file tapi diluar dari block luar lingkup seperti ruang linkup dari function dan lain-lain.
+Global variable memiliki sifat Static Duration, yang berarti variabel akan dibuat saat program dimulai dan dihancurkan ketika program berakhir.
+
+> Examples Program : 
+
+#include <iostream>
+#include <string>
+using namespace std;
+ 
+string gl_var= "Global Variable"; // Global var
+ 
+void AnotherFunction(){
+    cout<< gl_var << endl;
+}
+ 
+int main ()
+{
+    string loc_var = "Local Variable"; // Local var
+    
+	cout<< gl_var << endl;
+    cout<< loc_var << endl;
+ 
+    return 0;
+}
+
+Contoh program diatas dapat diartikan var global adalah yang didefinisikan di luar ruang lingkup 
+variable local, perbedaan diatas adalah contoh penggunaan var local dan global.
+Pada variable gl_var adalah identifikasi untuk var global, yang dapat diakses ke semua fungsi.
+Pada deklarasi loc_var adalah identifikasi untuk variable local yang dapat di akses hanya di dalam ruang lingkup itu sendiri.
+
+Variabel global tidak sama seperti variabel lokal. 
+jika dalam variabel lokal identitas yang sama pada anak ruang lingkup akan menggantikan variabel pada induk ruang lingkup,
+hal tersebut membuat variabel pada induk ruang lingkup akan digantikan dengan variabel yang berada pada anak ruang lingkup.
+Tapi berbeda dengan variabel global kita dimungkinkan mengakses variabel global meskipun pada ruang lingkup terdapat variabel yang mempunyai identitas sama.
+Hal itu bisa kita lakukan menggunakan Scope Resolution Operator (scope di dalam scope) ::. 
+Dengan tanda tersebut memungkinkan kita untuk memberitahu kompilator bahwa variabel yang dimaksud bukan lokal variabel tapi merupakan global variabel.
+
+> Examples Program : 
+#include <iostream>
+#include <string>
+using namespace std;
+ 
+string nama= "Global Variabel : belajarcpp"; //Global Variabel
+ 
+int main(void)
+{
+    string nama = "Lokal Variabel : belajarcpp"; // Local variabel
+    cout << nama << endl;
+    cout << ::nama << endl; // Scope Resolution Operator
+}
+
+>> Keyword Extern 
+Sebenarnya Variabel global yang di dirikan di dalam file masih berada pada ruang lingkup, 
+yaitu ruangkup file hal itu disebut sebagai Global Scope atau Global Namespace Scope, 
+yang memberikan kemungkinan untuk diakses dimulai dari baris dimana dia didirikan hingga akhir dari file.
+Extern keyword adalah keyword tambahan untuk mendirikan variabel, extern keyword berfungsi untuk membuat variabel menjadi bersifat external linkage. 
+Dengan menggunakan extern keyword kita dimungkinkan untuk membuat variabel yang dapat terhubung di file lain.
+extern keyword biasanya digunakan untuk membuat komunikasi antar file, dengan membuat satu variabel yang dapat digunakan dalam beberapa file
+
+Examples Program : 
+#include <iostream>
+
+extern int id;
+
+int main(void){
+	int id = 30;
+	std::cout << id << std::endl;
+}
+
+Untuk extern keyword hanya dapat digunakan pada variabel global, extern keyword tidak akan bisa melakukan linkage pada variabel yang bersifat static dan const.
+Jika kamu ingin bisa silahkan lihat contoh di blog2 atau tutorial lain tentang penggunaan kata kunci extern. extern tidak hanya bisa digunakan dalam variable global
+tapi bisa juga untuk menghubungkan dari file ke file.
