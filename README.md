@@ -38,8 +38,12 @@ And don't forget to beautify the code that you make yourself ^ - ^
 - [x] [Literals And Constants](https://github.com/syssaturn404/CppLanguage/blob/master/Const.txt)
 * [Variable & Type Data](https://github.com/syssaturn404/CppLanguage/blob/master/Variable_TypeData.cpp)
 * [Local Variable](https://github.com/syssaturn404/CppLanguage/blob/master/Local_var.txt)
+* [Global Variable And Use Of Extern Keywords](https://github.com/syssaturn404/CppLanguage/blob/master/Global%20Variables%20And%20Use%20Of%20Extern%20Keywords.txt)
 * [Programs With Basic Syntax](https://github.com/syssaturn404/CppLanguage/blob/master/Basic_Syntax.cpp)
 * [UNRELEASED !](https://f4.bcbits.com/img/a1173595372_16.jpg)
+
+### EXPERT 
+- [ ] [UNRELEASED !](https://f4.bcbits.com/img/a1173595372_16.jpg)
 
 ### MASTER
 - [ ] [UNRELEASED !](https://f4.bcbits.com/img/a1173595372_16.jpg)
