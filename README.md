@@ -42,12 +42,6 @@ And don't forget to beautify the code that you make yourself ^ - ^
 * [Programs With Basic Syntax](https://github.com/syssaturn404/CppLanguage/blob/master/Basic_Syntax.cpp)
 * [UNRELEASED !](https://f4.bcbits.com/img/a1173595372_16.jpg)
 
-### EXPERT 
-- [ ] [UNRELEASED !](https://f4.bcbits.com/img/a1173595372_16.jpg)
-
-### MASTER
-- [ ] [UNRELEASED !](https://f4.bcbits.com/img/a1173595372_16.jpg)
-
 ### DONATE ?
 
 * [`Saweria`](https://saweria.co/donate/miawgarong)
